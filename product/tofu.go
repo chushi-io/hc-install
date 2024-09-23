@@ -18,16 +18,16 @@ import (
 var (
 	simpleVersionRe = `v?(?P<version>[0-9]+(?:\.[0-9]+)*(?:-[A-Za-z0-9\.]+)?)`
 
-	terraformVersionOutputRe = regexp.MustCompile(`Terraform ` + simpleVersionRe)
+	tofuVersionOutputRe = regexp.MustCompile(`Terraform ` + simpleVersionRe)
 )
 
-var Terraform = Product{
-	Name: "terraform",
+var Tofu = Product{
+	Name: "tofu",
 	BinaryName: func() string {
 		if runtime.GOOS == "windows" {
-			return "terraform.exe"
+			return "tofu.exe"
 		}
-		return "terraform"
+		return "tofu"
 	},
 	GetVersion: func(ctx context.Context, path string) (*version.Version, error) {
 		cmd := exec.CommandContext(ctx, path, "version")
@@ -39,7 +39,7 @@ var Terraform = Product{
 
 		stdout := strings.TrimSpace(string(out))
 
-		submatches := terraformVersionOutputRe.FindStringSubmatch(stdout)
+		submatches := tofuVersionOutputRe.FindStringSubmatch(stdout)
 		if len(submatches) != 2 {
 			return nil, fmt.Errorf("unexpected number of version matches %d for %s", len(submatches), stdout)
 		}
@@ -51,7 +51,7 @@ var Terraform = Product{
 		return v, err
 	},
 	BuildInstructions: &BuildInstructions{
-		GitRepoURL:    "https://github.com/hashicorp/terraform.git",
+		GitRepoURL:    "https://github.com/opentofu/opentofu.git",
 		PreCloneCheck: &build.GoIsInstalled{},
 		Build:         &build.GoBuild{DetectVendoring: true},
 	},
