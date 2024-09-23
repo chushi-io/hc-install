@@ -11,10 +11,10 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/chushi-io/hc-install/internal/testutil"
+	"github.com/chushi-io/hc-install/product"
+	"github.com/chushi-io/hc-install/src"
 	"github.com/hashicorp/go-version"
-	"github.com/hashicorp/hc-install/internal/testutil"
-	"github.com/hashicorp/hc-install/product"
-	"github.com/hashicorp/hc-install/src"
 )
 
 var (

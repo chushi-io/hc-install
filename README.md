@@ -62,7 +62,7 @@ Each comes with different trade-offs described below.
 
 ## Example Usage
 
-See examples at <https://pkg.go.dev/github.com/hashicorp/hc-install#example-Installer>.
+See examples at <https://pkg.go.dev/github.com/chushi-io/hc-install#example-Installer>.
 
 ## CLI
 
@@ -72,7 +72,7 @@ The CLI comes with some trade-offs:
 
 - more limited interface compared to the flexible Go API (installs specific versions of products via `releases.ExactVersion`)
 - minimal environment pre-requisites (no need to compile Go code)
-- see ["hc-install is not a package manager"](https://github.com/hashicorp/hc-install#hc-install-is-not-a-package-manager)
+- see ["hc-install is not a package manager"](https://github.com/chushi-io/hc-install#hc-install-is-not-a-package-manager)
 
 ### Installation
 

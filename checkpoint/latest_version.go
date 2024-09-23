@@ -13,13 +13,13 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/chushi-io/hc-install/internal/pubkey"
+	rjson "github.com/chushi-io/hc-install/internal/releasesjson"
+	isrc "github.com/chushi-io/hc-install/internal/src"
+	"github.com/chushi-io/hc-install/internal/validators"
+	"github.com/chushi-io/hc-install/product"
 	checkpoint "github.com/hashicorp/go-checkpoint"
 	"github.com/hashicorp/go-version"
-	"github.com/hashicorp/hc-install/internal/pubkey"
-	rjson "github.com/hashicorp/hc-install/internal/releasesjson"
-	isrc "github.com/hashicorp/hc-install/internal/src"
-	"github.com/hashicorp/hc-install/internal/validators"
-	"github.com/hashicorp/hc-install/product"
 )
 
 var (

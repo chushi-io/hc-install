@@ -12,11 +12,11 @@ import (
 	"path/filepath"
 	"time"
 
+	isrc "github.com/chushi-io/hc-install/internal/src"
+	"github.com/chushi-io/hc-install/internal/validators"
+	"github.com/chushi-io/hc-install/product"
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing"
-	isrc "github.com/hashicorp/hc-install/internal/src"
-	"github.com/hashicorp/hc-install/internal/validators"
-	"github.com/hashicorp/hc-install/product"
 )
 
 var (

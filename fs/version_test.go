@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/chushi-io/hc-install/product"
 	"github.com/hashicorp/go-version"
-	"github.com/hashicorp/hc-install/product"
 )
 
 func TestVersionValidate(t *testing.T) {

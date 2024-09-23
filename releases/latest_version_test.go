@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"testing"
 
+	rjson "github.com/chushi-io/hc-install/internal/releasesjson"
+	"github.com/chushi-io/hc-install/product"
 	"github.com/hashicorp/go-version"
-	rjson "github.com/hashicorp/hc-install/internal/releasesjson"
-	"github.com/hashicorp/hc-install/product"
 )
 
 func TestLatestVersionValidate(t *testing.T) {

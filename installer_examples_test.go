@@ -7,13 +7,13 @@ import (
 	"context"
 	"log"
 
+	install "github.com/chushi-io/hc-install"
+	"github.com/chushi-io/hc-install/build"
+	"github.com/chushi-io/hc-install/fs"
+	"github.com/chushi-io/hc-install/product"
+	"github.com/chushi-io/hc-install/releases"
+	"github.com/chushi-io/hc-install/src"
 	"github.com/hashicorp/go-version"
-	install "github.com/hashicorp/hc-install"
-	"github.com/hashicorp/hc-install/build"
-	"github.com/hashicorp/hc-install/fs"
-	"github.com/hashicorp/hc-install/product"
-	"github.com/hashicorp/hc-install/releases"
-	"github.com/hashicorp/hc-install/src"
 )
 
 // Installation of a single exact version

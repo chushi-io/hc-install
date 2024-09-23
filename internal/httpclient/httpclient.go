@@ -8,8 +8,8 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/chushi-io/hc-install/version"
 	"github.com/hashicorp/go-retryablehttp"
-	"github.com/hashicorp/hc-install/version"
 )
 
 // NewHTTPClient provides a pre-configured http.Client

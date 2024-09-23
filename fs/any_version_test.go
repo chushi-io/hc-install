@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/hashicorp/hc-install/product"
+	"github.com/chushi-io/hc-install/product"
 )
 
 func TestAnyVersionValidate(t *testing.T) {
