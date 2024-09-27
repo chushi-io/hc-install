@@ -18,7 +18,7 @@ import (
 var (
 	simpleVersionRe = `v?(?P<version>[0-9]+(?:\.[0-9]+)*(?:-[A-Za-z0-9\.]+)?)`
 
-	tofuVersionOutputRe = regexp.MustCompile(`Terraform ` + simpleVersionRe)
+	tofuVersionOutputRe = regexp.MustCompile(`Tofu ` + simpleVersionRe)
 )
 
 var Tofu = Product{
